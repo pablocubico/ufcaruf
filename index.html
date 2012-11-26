@@ -1,1 +1,109 @@
-Setting up pages...
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
+  </head>
+  <body>
+    <!-- Use this installation button to install locally without going
+         through the marketpace (see app.js) -->
+    <button id="install-btn">Instalar</button>    
+
+    <!-- Write your application here -->
+
+    <div class="container-fluid" id="ufcaruf-container">
+      <div class="row-fluid">
+        <div class="nav">
+          <a class="logouc" href="/#"><img src="img/ufcaruf-logo-150.png"></a>
+          <a class="secciones" id="artistas" href="/#artistas"><img src="img/artistas.jpg"></a>
+          <a class="secciones" id="discos" href="/#discos"><img src="img/discos.jpg"></a>
+          <a class="secciones" id="fechas" href="/#fechas"><img src="img/fechas.jpg"></a>
+          <a class="secciones" id="novedades" href="/#novedades"><img src="img/novedades.jpg"></a>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div id="main-content">
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p>Desarrollada por miembros de la <a href="http://www.mozilla-ar.org">Comunidad Argentina de Mozilla</a> para <a href="http://www.ufcaruf.org.ar/">Uf Caruf! Discos</a>.</p>
+      </div>
+    </div>
+    
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+
+    <script type="text/template" id="ufcaruf-home">
+        <div class="page-header">
+            <div class="uf-logo">
+              <img src="img/ufcaruf-logo-600.png">
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="uf-button">
+              <a href="#artistas"><img src="img/artistas.jpg"></a>
+            </div>
+            <div class="uf-button">
+              <a href="#"><img src="img/discos.jpg"></a>
+            </div>
+            <div class="uf-button">
+              <a href="#fechas"><img src="img/fechas.jpg"></a>
+            </div>
+            <div class="uf-button">
+              <a href="#"><img src="img/novedades.jpg"></a>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="ufcaruf-artistas">
+        <div class="row-fluid" id="listado-artistas">
+        </div>
+    </script>
+
+    <script type="text/template" id="ufcaruf-artista-item">
+      <div class="span4 item-artista">
+        <div class="nombre-y-foto">
+          <img src="<%= imagen %>">
+        </div>
+        <div class="detalles">
+          <h2 class="artista"><%= nombre %></h2>
+          <p class="autor-foto muted">Fotografía de <%= autorFoto %></p>
+          <p class="descripcion"><%= descripcion %></p>
+          <a href="<%= urlContacto %>"><%= textoContacto %></a>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="ufcaruf-fechas">
+        <div class="row-fluid">
+          <ul id="listado-fechas">
+          </ul>
+        </div>
+    </script>
+
+    <script type="text/template" id="ufcaruf-fecha-item">
+        <h3 class="fecha"><%= fechaLarga %><span class="muted"> - <%= fechaRelativa %></span></h3>
+        <h2 class="titulo"><%= titulo %></h2>
+        <p class="lugar"><%= lugar %></p>
+    </script>
+
+  </body>
+</html>
+
+

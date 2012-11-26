@@ -1,0 +1,7 @@
+{
+  "volo": {
+    "dependencies": {
+      "moment": "github:timrwood/moment/1.7.2"
+    }
+  }
+}

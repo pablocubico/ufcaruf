@@ -1,0 +1,131 @@
+
+#install-btn {
+    background: #0088cc; 
+    background: -moz-linear-gradient(top,  #0088cc 0%, #0055cc 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0088cc), color-stop(100%,#0055cc)); 
+    background: -webkit-linear-gradient(top,  #0088cc 0%,#0055cc 100%); 
+    background: -o-linear-gradient(top,  #0088cc 0%,#0055cc 100%); 
+    background: -ms-linear-gradient(top,  #0088cc 0%,#0055cc 100%); 
+    background: linear-gradient(to bottom,  #0088cc 0%,#0055cc 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088cc', endColorstr='#0055cc',GradientType=0 ); 
+    text-align: center;
+    font-size: 200%;
+    margin: 1em auto;
+    display: block;
+    padding: .5em;
+    color: white;
+    width: 10em;
+    max-width: 80%;
+    line-height: 1.2em;
+}
+@import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Cabin:400,700);
+html,
+body {
+	height: 100%;
+	font-family: 'Cabin', sans-serif !important;
+}
+#ufcaruf-container {
+	max-width: 1100px;
+	margin: auto;
+}
+.nav {
+	margin: auto;
+	float: left;
+}
+.nav a.secciones img {
+	transition-property: height;
+    transition-duration: 1s;
+	height: 100px;
+}
+.nav a.secciones:hover img {
+	height: 150px;
+}
+.nav a.logouc img {
+	
+	-moz-transition: all 1s ease;
+	
+	-webkit-transition: all 1s ease;
+	
+	-o-transition: all 1s ease;
+	
+	transition: all 1s ease;
+    transition-duration: 1s;
+}
+.nav a.logouc:hover img {
+	transform:rotate(245deg);
+	-ms-transform:rotate(245deg); 
+	-moz-transform:rotate(245deg); 
+	-webkit-transform:rotate(245deg); 
+	-o-transform:rotate(245deg); 
+}
+#footer {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #F5EE99;
+}
+#footer p {
+	margin: 0px;
+}
+.uf-logo {
+	margin: auto;
+	max-width: 600px;
+}
+.uf-logo img {
+	width: 100%; 
+}
+.uf-button {
+	margin: auto;
+	max-width: 600px;
+}
+.uf-button img {
+	width: 100%; 
+}
+.item-artista {
+	
+}
+.item-artista .detalles {
+	padding: 1em;
+	border-top: 10px solid #02A5D5;
+}
+.item-artista .nombre-y-foto {
+	position: relative;
+}
+.item-artista img {
+	width: 100%;
+}
+.item-artista h2.artista {
+	color: #F04521;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 1.1;
+	font-family: 'Annie Use Your Telescope', sans-serif;
+	margin: 0px;
+}
+.item-artista .autor-foto {
+	font-size: .8em;
+}
+.item-artista .descripcion {
+}
+#listado-fechas {
+	list-style: none;
+	margin: 0px;
+}
+#listado-fechas li {
+	border-bottom: 10px solid #99C050;
+}
+#listado-fechas li h2 {
+	color: #DE007D;
+	font-family: 'Annie Use Your Telescope', sans-serif;
+	margin: 0px;
+}
+#listado-fechas li h3 {
+	font-size: 14pt;
+	margin: 0px;
+}
+#listado-fechas li p {
+	font-size: 12pt;
+	margin: 1em 0;
+}
+@media (max-width: 767px) {
+	
+}
