@@ -1,0 +1,25 @@
+{
+  "version": "0.1",
+  "name": "Uf Caruf! Discos",
+  "description": "Aplicación Web de Uf Caruf! Discos",
+  "launch_path": "/ufcaruf",
+  "icons": {
+    "16": "/ufcaruf/img/icons/ufcaruf-16.png",
+    "48": "/ufcaruf/img/icons/ufcaruf-48.png",
+    "128": "/ufcaruf/img/icons/ufcaruf-128.png"
+  },
+  "developer": {
+    "name": "Pablo Cuadrado - Guillermo Movia",
+    "url": "http://pablocubi.co/ufcaruf"
+  },
+  "installs_allowed_from": ["*"],
+  "locales": {
+    "es": {
+      "description": "Aplicación Web de Uf Caruf! Discos",
+      "developer": {
+        "url": "http://pablocubi.co/ufcaruf"
+      }
+    }
+  },
+  "default_locale": "es"
+}
