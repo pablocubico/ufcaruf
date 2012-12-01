@@ -22,23 +22,24 @@ body {
 .nav {
 	margin: auto;
 	float: left;
+	width: 100%;
 }
 
 .nav a.secciones img {
 	/* Firefox */
-	-moz-transition: height 1s ease;
+	-moz-transition: width 1s ease;
 	/* WebKit */
-	-webkit-transition: height 1s ease;
+	-webkit-transition: width 1s ease;
 	/* Opera */
-	-o-transition: height 1s ease;
+	-o-transition: width 1s ease;
 	/* Standard */
-	transition: height 1s ease;
+	transition: width 1s ease;
     transition-duration: 1s;
-	height: 100px;
+	width: 20%;
 }
 
 .nav a.secciones:hover img {
-	height: 150px;
+	width: 25%;
 }
 
 .nav a.logouc img {
@@ -51,6 +52,7 @@ body {
 	/* Standard */
 	transition: all 1s ease;
     transition-duration: 1s;
+    width: 12%;
 }
 
 .nav a.logouc:hover img {
