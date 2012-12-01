@@ -98,6 +98,23 @@
         <p class="lugar"><%= lugar %></p>
     </script>
 
+    <script type="text/template" id="ufcaruf-discos">
+        <div class="row-fluid">
+          <ul id="listado-discos">
+          </ul>
+        </div>
+    </script>
+
+    <script type="text/template" id="ufcaruf-disco-item">
+      <h3 class="artista"><%= artista %></h3>
+      <h2 class="titulo"><%= titulo %><span class="badge"><%= anio %></span></h2>
+      <p><%= descripcion %></p>
+      <div>
+        <%= embed %>
+      </div>
+    </script>
+
+
   </body>
 </html>
 

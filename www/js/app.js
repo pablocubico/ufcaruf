@@ -35,6 +35,7 @@ define(function(require) {
         Novedades = require('./collections/novedades');
 
     // Vistas
+    //FIXME: Extraer las vistas.
     var HomeView = Backbone.View.extend({
             tagName: "div",
             template: _.template($('#ufcaruf-home').html()),
@@ -105,16 +106,49 @@ define(function(require) {
                 return this;
             }
          
+        }),
+
+        // Discos e ítems de discos
+        DiscosView = Backbone.View.extend({
+
+            tagName: "div",
+            template: _.template($('#ufcaruf-discos').html()),
+            render: function (eventName) {
+                
+                $(this.el).html(this.template());
+
+                // Recorro el modelo de discos
+                _.each(this.model.models, function (disco) {
+                    $(this.el).find('#listado-discos').append(new DiscosItemView({ model: disco }).render().el);
+                }, this);
+
+                return this;
+            }
+        }),
+        DiscosItemView = Backbone.View.extend({
+         
+            tagName:"div",
+         
+            template:_.template($('#ufcaruf-disco-item').html()),
+         
+            render:function (eventName) {
+                $(this.el).html(this.template(this.model.toJSON()));
+                return this;
+            }
+         
         });
 
 
+
     // Router
+    //FIXME: Extraer el router.
     var AppRouter = Backbone.Router.extend({
      
         routes:{
             "": "home",
             "artistas": "artistas",
-            "fechas": "fechas"
+            "fechas": "fechas",
+            "discos": "discos"
         },
      
         home: function () {
@@ -130,10 +164,15 @@ define(function(require) {
         fechas: function() {          
             this.fechasView = new FechasView({model: datos.fechas});
             $('#main-content').html(this.fechasView.render().el);
+        },
+
+        discos: function() {          
+            this.discosView = new DiscosView({model: datos.discos});
+            $('#main-content').html(this.discosView.render().el);
         }
 
     });
-     
+    
     var app = new AppRouter();
     Backbone.history.start();
 
