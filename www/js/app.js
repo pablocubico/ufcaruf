@@ -55,8 +55,9 @@ define(function(require) {
                 $(this.el).html(this.template());
 
                 // Recorro el modelo de artistas
+                var listadoArtistas = $(this.el).find('#listado-artistas');
                 _.each(this.model.models, function (artista) {
-                    $(this.el).find('#listado-artistas').append(new ArtistasItemView({ model: artista }).render().el);
+                    listadoArtistas.append(new ArtistasItemView({ model: artista }).render().el);
                 }, this);
 
                 return this;
@@ -85,8 +86,9 @@ define(function(require) {
                 $(this.el).html(this.template());
 
                 // Recorro el modelo de fechas
+                var listadoFechas = $(this.el).find('#listado-fechas');
                 _.each(this.model.models, function (fecha) {
-                    $(this.el).find('#listado-fechas').append(new FechasItemView({ model: fecha }).render().el);
+                    listadoFechas.append(new FechasItemView({ model: fecha }).render().el);
                 }, this);
 
                 return this;
@@ -118,8 +120,9 @@ define(function(require) {
                 $(this.el).html(this.template());
 
                 // Recorro el modelo de discos
+                var listadoDiscos = $(this.el).find('#listado-discos');
                 _.each(this.model.models, function (disco) {
-                    $(this.el).find('#listado-discos').append(new DiscosItemView({ model: disco }).render().el);
+                    listadoDiscos.append(new DiscosItemView({ model: disco }).render().el);
                 }, this);
 
                 return this;
