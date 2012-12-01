@@ -25,7 +25,14 @@ body {
 }
 
 .nav a.secciones img {
-	transition-property: height;
+	/* Firefox */
+	-moz-transition: height 1s ease;
+	/* WebKit */
+	-webkit-transition: height 1s ease;
+	/* Opera */
+	-o-transition: height 1s ease;
+	/* Standard */
+	transition: height 1s ease;
     transition-duration: 1s;
 	height: 100px;
 }
