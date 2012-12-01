@@ -201,3 +201,27 @@ body {
 @media (max-width: 767px) {
 	
 }
+
+/* Fixes para smartphones */
+@media (max-width: 359px) {
+
+	.nav {
+		margin: auto;
+		float: left;
+		width: 100%;
+	}
+
+	.nav a.secciones img {
+		width: 100%;
+	}
+
+	.nav a.secciones:hover img {
+		width: 100%;
+	}
+
+	.nav a.logouc img {
+	    width: 100%;
+	}
+	
+}
+
