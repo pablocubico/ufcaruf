@@ -107,7 +107,18 @@ define([
             url_descarga: 'http://miroysufabulosaorquestadejuguete1.bandcamp.com/album/adelanto-2013',
             codigo_uc: '0023',
             descripcion: 'Ade­lanto del disco que la banda de Uf Caruf! pub­li­cará en el 2013. Grabado en Nakao (Juan Ponche Abra­ham y Gabriel Ricci) y Estu­dios Tolosa (Eduardo Car­reras). Mez­clado y mas­ter­i­zado por Juan Ponche Abra­ham. Pro­ducido por Miro y Su FODJ y Juan Ponche Abra­ham. Ilus­tración: Mónica Bagur. MIRO Y SU FODJ son: Lucas “Rock” Gre­gorini (gui­tar­ras y voces) Joaquin Inza (baterías y per­cu­siones) Juan Artero (tecla­dos) Mis­ter (voces y gui­tar­ras) Lau­taro Barceló (gui­tar­ras y voces) Flavio Mogetta (bajo)',
-            embed: '<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2843663&amp;auto_play=false&amp;show_artwork=true&amp;color=c07450"></iframe>'
+            embed: '<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2843663&amp;auto_play=false&amp;show_artwork=true&amp;color=c07450"></iframe>',
+            tapa: 'img/tapas/ASTRONAUTA-Y-COWBOY-298x300.jpg'
+        },
+        {
+            artista: 'Otro disco',
+            titulo: 'Uno más viejito',
+            anio: '1988',
+            url_descarga: 'http://miroysufabulosaorquestadejuguete1.bandcamp.com/album/adelanto-2013',
+            codigo_uc: '0002',
+            descripcion: 'Lorem ipsum disco es cultura',
+            embed: '<iframe width="300" height="355" style="position: relative; display: block; width: 300px; height: 355px;" src="http://bandcamp.com/EmbeddedPlayer/v=2/album=3652914031/size=grande2/bgcol=FFFFFF/linkcol=4285BB/" allowtransparency="true" frameborder="0"><a href="http://miroysufabulosaorquestadejuguete1.bandcamp.com/album/adelanto-2013">Adelanto 2013 by Miro y su Fabulosa Orquesta de Juguete</a></iframe>',
+            tapa: 'img/tapas/ASTRONAUTA-Y-COWBOY-298x300.jpg'
         },
     ]);
 

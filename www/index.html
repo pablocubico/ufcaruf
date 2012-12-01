@@ -106,11 +106,20 @@
     </script>
 
     <script type="text/template" id="ufcaruf-disco-item">
-      <h3 class="artista"><%= artista %></h3>
-      <h2 class="titulo"><%= titulo %><span class="badge"><%= anio %></span></h2>
-      <p><%= descripcion %></p>
-      <div>
-        <%= embed %>
+      <div class="padder-disco">
+        <div class="tapa">
+          <img src="<%= tapa %>" alt="<%= artista %> - Tapa de <%= titulo %>">
+          <a class="btn btn-success download" href="<%= url_descarga %>">Descargar disco</a>
+        </div>
+        <div class="datos">
+          <h2 class="titulo"><%= titulo %><span class="badge"><%= anio %></span></h2>
+          <h4 class="artista"><%= artista %></h4>
+          <p><%= descripcion %></p>
+        </div>
+        <div class="embed">
+          <%= embed %>
+        </div>
+        <div class="clearfix"></div>
       </div>
     </script>
 

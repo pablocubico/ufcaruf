@@ -132,7 +132,7 @@ define(function(require) {
             template:_.template($('#ufcaruf-disco-item').html()),
          
             render:function (eventName) {
-                $(this.el).html(this.template(this.model.toJSON()));
+                $(this.el).addClass('disco').html(this.template(this.model.toJSON()));
                 return this;
             }
          

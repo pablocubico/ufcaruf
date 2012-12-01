@@ -143,6 +143,50 @@ body {
 	margin: 1em 0;
 }
 
+#listado-discos .disco {
+	border: 1px solid #6CC5F1;
+	border-radius: 10px;
+	margin-bottom: 1em;
+}
+
+#listado-discos .padder-disco {
+	padding: 20px;
+}
+
+#listado-discos .disco .tapa {
+	float: left;
+	width: 30%;
+	margin-right: 2%;
+}
+
+#listado-discos .disco .tapa img {
+	width: 100%;
+}
+
+#listado-discos .disco .datos {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+#listado-discos .disco .titulo {
+	margin-top: 0px;
+	color: #D61223;
+}
+
+#listado-discos .disco .embed {
+	float: right;
+	width: 30%;
+}
+
+#listado-discos .disco .download {
+	background-image: url(../img/cloud_download.png);
+	background-position: 8px 8px;
+	background-repeat: no-repeat;
+	padding-left: 62px;
+	line-height: 56px;
+	font-size: 16pt;
+}
 
 /* Algunos fixes para tablets */
 @media (max-width: 767px) {
